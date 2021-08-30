@@ -1,28 +1,31 @@
 // import logo from './logo.svg';
 import './App.scss';
+import Home from "../Home/Home";
+import About from "../About/About";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import CustomNavbar from "../CustomNavbar/CustomNavbar";
 
 function App() {
     return (
-    <div className="App">
-        {/*<header className="App-header">*/}
-        {/*  <img src={logo} className="App-logo" alt="logo" />*/}
-        {/*  <p>*/}
-        {/*    Edit <code>src/App.js</code> and save to reload.*/}
-        {/*  </p>*/}
-        {/*  <a*/}
-        {/*    className="App-link"*/}
-        {/*    href="https://reactjs.org"*/}
-        {/*    target="_blank"*/}
-        {/*    rel="noopener noreferrer"*/}
-        {/*  >*/}
-        {/*    Learn React*/}
-        {/*  </a>*/}
-        {/*</header>*/}
-        <CustomNavbar />
-        <h1>Welcome to Brendan's personal website!</h1>
-        <p>This serves as a test environment to learn React and SASS.</p>
-    </div>
+        <Router>
+            <div>
+                <CustomNavbar />
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route exact path="/home">
+                        <Home />
+                    </Route>
+                    <Route exact path="/projects">
+                        <Home />
+                    </Route>
+                    <Route exact path="/about">
+                        <About />
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
     );
 }
 
