@@ -2,8 +2,9 @@
 import './App.scss';
 import Home from "../Home/Home";
 import About from "../About/About";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import CustomNavbar from "../CustomNavbar/CustomNavbar";
+import Projects from "../Projects/Projects";
 
 function App() {
     return (
@@ -18,7 +19,7 @@ function App() {
                         <Home />
                     </Route>
                     <Route exact path="/projects">
-                        <Home />
+                        <Projects />
                     </Route>
                     <Route exact path="/about">
                         <About />
