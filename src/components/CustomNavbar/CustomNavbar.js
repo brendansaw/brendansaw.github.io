@@ -25,14 +25,26 @@ function CustomNavbar() {
                         <Nav.Link className="custom-navbar-image-nav-link"
                                   as={Anchor}
                                   target="_blank"
+                                  href="mailto:brendansaw@gmail.com">
+                            <img className="custom-navbar-image" src="/email-icon.png" alt="Email"/>
+                        </Nav.Link>
+                        <Nav.Link className="custom-navbar-image-nav-link"
+                                  as={Anchor}
+                                  target="_blank"
+                                  href="https://www.youtube.com/channel/UCDEfH4JPTC2ExEtDE_1ii_w">
+                            <img className="custom-navbar-image" src="/youtube-icon.png" alt="YouTube"/>
+                        </Nav.Link>
+                        <Nav.Link className="custom-navbar-image-nav-link"
+                                  as={Anchor}
+                                  target="_blank"
                                   href="https://github.com/brendansaw">
-                            <img className="custom-navbar-image" src="/github-logo.png" alt="GitHub"/>
+                            <img className="custom-navbar-image" src="/github-icon.png" alt="GitHub"/>
                         </Nav.Link>
                         <Nav.Link className="custom-navbar-image-nav-link"
                                   as={Anchor}
                                   target="_blank"
                                   href="https://www.linkedin.com/in/brendan-saw/">
-                            <img className="custom-navbar-image" src="/linkedin-logo.png" alt="Linkedin"/>
+                            <img className="custom-navbar-image" src="/linkedin-icon.png" alt="LinkedIn"/>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
