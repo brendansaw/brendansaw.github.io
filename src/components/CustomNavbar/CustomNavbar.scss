@@ -1,0 +1,20 @@
+.custom-navbar {
+  &-image {
+    height: 25px;
+    width: auto;
+
+    &-nav-link:hover {
+      background-color: #7a7a7a;
+      overflow: hidden;
+    }
+  }
+  &-nav-right {
+    background-color: darkgray;
+    border: 3px solid orange;
+    border-radius: 7px;
+
+    &:hover {
+      border: 3px solid cornflowerblue;
+    }
+  }
+}
