@@ -12,39 +12,36 @@ function CustomNavbar() {
                     <Nav className="me-auto">
                         <Nav.Link as={NavLink} to="/about">About</Nav.Link>
                         <Nav.Link as={NavLink} to="/projects">Projects</Nav.Link>
-                        {/*<NavDropdown title="Dropdown" id="basic-nav-dropdown">*/}
-                        {/*    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>*/}
-                        {/*    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>*/}
-                        {/*    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>*/}
-                        {/*    <NavDropdown.Divider />*/}
-                        {/*    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>*/}
-                        {/*</NavDropdown>*/}
-
                     </Nav>
+
                     <Nav className="ms-auto custom-navbar-nav-right">
                         <Nav.Link className="custom-navbar-image-nav-link"
                                   as={Anchor}
                                   target="_blank"
                                   href="mailto:brendansaw@gmail.com">
                             <img className="custom-navbar-image" src="/email-icon.png" alt="Email"/>
+                            <span className="custom-navbar-image-text"> Email</span>
                         </Nav.Link>
                         <Nav.Link className="custom-navbar-image-nav-link"
                                   as={Anchor}
                                   target="_blank"
                                   href="https://www.youtube.com/channel/UCDEfH4JPTC2ExEtDE_1ii_w">
                             <img className="custom-navbar-image" src="/youtube-icon.png" alt="YouTube"/>
+                            <span className="custom-navbar-image-text"> YouTube</span>
                         </Nav.Link>
                         <Nav.Link className="custom-navbar-image-nav-link"
                                   as={Anchor}
                                   target="_blank"
                                   href="https://github.com/brendansaw">
                             <img className="custom-navbar-image" src="/github-icon.png" alt="GitHub"/>
+                            <span className="custom-navbar-image-text"> GitHub</span>
                         </Nav.Link>
                         <Nav.Link className="custom-navbar-image-nav-link"
                                   as={Anchor}
                                   target="_blank"
                                   href="https://www.linkedin.com/in/brendan-saw/">
                             <img className="custom-navbar-image" src="/linkedin-icon.png" alt="LinkedIn"/>
+                            <span className="custom-navbar-image-text"> LinkedIn</span>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

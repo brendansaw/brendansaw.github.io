@@ -19,3 +19,11 @@
     }
   }
 }
+.custom-navbar-image-text {
+  color: black;
+}
+@media (min-width: 576px) {
+  .custom-navbar-image-text {
+    display: none;
+  }
+}
