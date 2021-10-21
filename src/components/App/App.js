@@ -2,31 +2,29 @@
 import './App.scss';
 import Home from "../Home/Home";
 import About from "../About/About";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import CustomNavbar from "../CustomNavbar/CustomNavbar";
+import CustomSidebar from "../CustomSidebar/CustomSidebar";
 import Projects from "../Projects/Projects";
 
 function App() {
     return (
         <Router>
             <div className="App">
-                <CustomNavbar />
+                <CustomSidebar/>
                 <div className="app-body-spacing app-body-background-color">
                     <Switch>
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route exact path="/home">
-                            <Home />
-                        </Route>
-                        <Route exact path="/projects">
+                        <Redirect from="/home" to="/"/>
+                        <Route path="/projects">
                             <Projects />
                         </Route>
-                        <Route exact path="/about">
+                        <Route path="/about">
                             <About />
                         </Route>
                     </Switch>
-
                 </div>
             </div>
         </Router>
