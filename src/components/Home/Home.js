@@ -47,7 +47,7 @@ function Home() {
             </table>
 
             <p className="home-paragraph">
-                You can the the source code for this website as well as many of my other projects on my GitHub.
+                You can the source code for this website as well as many of my other projects on my GitHub.
                 Feel free to look around by navigating through the sidebar on the left.
                 I can also be reached through my emails
                 at <a href="mailto:brendansaw@gmail.com">brendansaw@gmail.com</a> or <a href="mailto:bsaw@sfu.ca">bsaw@sfu.ca</a>.
