@@ -6,13 +6,15 @@ import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom
 import CustomNavbar from "../CustomNavbar/CustomNavbar";
 import CustomSidebar from "../CustomSidebar/CustomSidebar";
 import Projects from "../Projects/Projects";
+import Courses from "../Courses/Courses";
+import NoMatch from "../NoMatch/NoMatch";
 
 function App() {
     return (
         <Router>
             <div className="App">
                 <CustomSidebar/>
-                <div className="app-body-spacing app-body-background-color">
+                <div className="app-body-spacing app-body-background-color app-body-align app-body-font">
                     <Switch>
                         <Route exact path="/">
                             <Home />
@@ -21,8 +23,14 @@ function App() {
                         <Route path="/projects">
                             <Projects />
                         </Route>
+                        <Route path="/courses">
+                            <Courses />
+                        </Route>
                         <Route path="/about">
                             <About />
+                        </Route>
+                        <Route path="*">
+                            <NoMatch />
                         </Route>
                     </Switch>
                 </div>

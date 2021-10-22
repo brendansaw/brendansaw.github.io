@@ -1,0 +1,54 @@
+.Home {
+  & > ul {
+    display: inline-block;
+    text-align: left;
+  }
+  & > table {
+    justify-content: flex-start;
+    display: inline-block;
+    text-align: left;
+    & > tbody {
+      vertical-align: top;
+    }
+  }
+}
+
+.profile-picture {
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  border: 0.5em solid aliceblue;
+  object-fit: cover;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  & > div {
+    margin: 10px;
+  }
+}
+
+.name {
+  &-font {
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+  }
+  &-card {
+    border: solid black 3px;
+    padding: 15px;
+    box-shadow: 3px 3px 8px #54585A;
+  }
+}
+
+.home-paragraph {
+  max-width: 50vw;
+  align-self: center;
+}
+
+.center-ul {
+  list-style-position: inside;
+}
