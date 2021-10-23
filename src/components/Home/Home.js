@@ -1,6 +1,5 @@
 // import logo from './logo.svg';
 import './Home.scss';
-import Div100vh from "react-div-100vh";
 
 function Home() {
     return (
