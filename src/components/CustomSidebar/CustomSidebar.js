@@ -24,8 +24,8 @@ function CustomSidebar() {
                 <Menu iconShape="square" className="main-sidebar-section">
                     <MenuItem icon={ <BiHome/> }><Link to="/">Home</Link></MenuItem>
                     <SubMenu icon={ <BiUser/> } title="About" >
-                        <MenuItem><Link to="/about/school">School</Link></MenuItem>
                         <MenuItem><Link to="/about/work">Work</Link></MenuItem>
+                        <MenuItem><Link to="/about/school">School</Link></MenuItem>
                         <MenuItem><Link to="/about/resume">Resume</Link></MenuItem>
                     </SubMenu>
                     <MenuItem icon={ <BiBookBookmark/> }><Link to="/projects">Projects</Link></MenuItem>
