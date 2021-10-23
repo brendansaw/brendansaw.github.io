@@ -3,7 +3,6 @@ import './App.scss';
 import Home from "../Home/Home";
 import About from "../About/About";
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
-import CustomNavbar from "../CustomNavbar/CustomNavbar";
 import CustomSidebar from "../CustomSidebar/CustomSidebar";
 import Projects from "../Projects/Projects";
 import Courses from "../Courses/Courses";

@@ -1,5 +1,5 @@
 import './CustomNavbar.scss';
-import {Navbar, Nav, NavDropdown, Container, Anchor} from "react-bootstrap";
+import {Navbar, Nav, Container, Anchor} from "react-bootstrap";
 import {Link, NavLink} from "react-router-dom";
 
 function CustomNavbar() {

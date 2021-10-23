@@ -7,7 +7,7 @@ function ProjectTemplate(props) {
             <h2>{props.values.name}</h2>
             <div className="project-section">
                 <div className="project-section-vertical-flex project-section-outer">
-                    <img src={props.values.image_src} className="project-img-width" alt="GreenMaps image"/>
+                    <img src={props.values.image_src} className="project-img-width" alt="Project"/>
                     <br/>
                     <b className="text-align-left">Related Links</b>
                     <ul className="project-section-ul">
