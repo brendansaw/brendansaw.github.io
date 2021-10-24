@@ -1,9 +1,15 @@
 import {FaGithub, FaKeyboard, FaYoutube} from "react-icons/fa";
+import GreenMapsPicture from "../../images/projects/greenmaps.png";
+import EFCPicture from "../../images/projects/escapefromcorona.png";
+import GrocerEasePicture from "../../images/projects/grocerease.png";
+import WebScraperPicture from "../../images/projects/googlewebscraper.png";
+import HackChanPicture from "../../images/projects/hackchan.png";
+import BazaarTickerPicture from "../../images/projects/bazaarticker.png";
 
 const projects = [
     {
         "name": "GreenMaps",
-        "image_src": "/projects/greenmaps.png",
+        "image_src": GreenMapsPicture,
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/GreenMaps-app">GitHub</a>
@@ -33,7 +39,7 @@ const projects = [
     },
     {
         "name": "Escape From Corona",
-        "image_src": "/projects/escapefromcorona.png",
+        "image_src": EFCPicture,
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/brendansaw/CMPT-276-Escape-From-Corona">GitHub</a>
@@ -54,7 +60,7 @@ const projects = [
     },
     {
         "name": "GrocerEase",
-        "image_src": "/projects/grocerease.png",
+        "image_src": GrocerEasePicture,
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/brendansaw/GrocerEase">GitHub</a>
@@ -78,7 +84,7 @@ const projects = [
     },
     {
         "name": "Google Marketplace Web Scraper",
-        "image_src": "/projects/googlewebscraper.png",
+        "image_src": WebScraperPicture,
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/brendansaw/Google-Fan-Web-Scraper">GitHub</a>
@@ -101,7 +107,7 @@ const projects = [
     },
     {
         "name": "HackChan",
-        "image_src": "/projects/hackchan.png",
+        "image_src": HackChanPicture,
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/brendansaw/HackChan">GitHub</a>
@@ -125,7 +131,7 @@ const projects = [
     },
     {
         "name": "Bazaar Ticker",
-        "image_src": "/projects/bazaarticker.png",
+        "image_src": BazaarTickerPicture,
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/brendansaw/BazaarTicker">GitHub</a>

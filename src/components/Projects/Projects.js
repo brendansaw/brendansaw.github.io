@@ -3,6 +3,7 @@ import ProjectTemplate from "./ProjectTemplate";
 import projects from "./ProjectsList";
 
 function Projects() {
+    document.title = "Brendan Saw - Projects"
     const projectsListData = projects;
 
     return (

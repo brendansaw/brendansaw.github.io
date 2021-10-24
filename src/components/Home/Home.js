@@ -1,12 +1,14 @@
 // import logo from './logo.svg';
 import './Home.scss';
+import ProfilePicture from "../../images/github-profile-picture.jpg";
 
 function Home() {
+    document.title = "Brendan Saw - Home"
     return (
         <div className="Home">
             <div className="two-columns">
             <div>
-                <img className="profile-picture" src="/github-profile-picture.jpg" alt="Profile"/>
+                <img className="profile-picture" src={ProfilePicture} alt="Profile"/>
             </div>
             <div className="name-card">
                 <h1 className="name-font">Brendan Saw</h1>

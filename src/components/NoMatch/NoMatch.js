@@ -2,9 +2,10 @@ import "./NoMatch.scss";
 
 
 function About() {
+    document.title = "Brendan Saw - Page Not Found"
     return (
         <div className="NoMatch">
-            <h1>error 404</h1>
+            <h1>Error: Page Not Found</h1>
         </div>
     );
 }

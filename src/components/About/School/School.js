@@ -1,7 +1,9 @@
 import "./School.scss";
-
+import SFULogo from "../../../images/SFU_horizontal_logo_rgb.png";
+import IBLogo from "../../../images/dp-programme-logo-en.png";
 
 function About() {
+    document.title = "Brendan Saw - School"
     return (
         <div className="School">
             <h1>School</h1>
@@ -14,7 +16,7 @@ function About() {
                     <tbody>
                         <tr>
                             <td>
-                                <img src="/SFU_horizontal_logo_rgb.png" alt="SFU Logo" className="school-img-size"/>
+                                <img src={SFULogo} alt="SFU Logo" className="school-img-size"/>
                             </td>
                             <td>
                                 <p>
@@ -100,7 +102,7 @@ function About() {
 
                         <tr>
                             <td>
-                                <img src="/dp-programme-logo-en.png" alt="IB Diploma Programme Logo" className="school-img-size"/>
+                                <img src={IBLogo} alt="IB Diploma Programme Logo" className="school-img-size"/>
                             </td>
                             <td>
                                 I went to Port Moody Secondary School which offered the International Baccalaureate Program -
@@ -112,10 +114,7 @@ function About() {
                         </tr>
                     </tbody>
                 </table>
-
-
             </div>
-
         </div>
     );
 }
