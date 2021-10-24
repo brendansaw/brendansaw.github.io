@@ -5,7 +5,7 @@ import About from "../About/About";
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import CustomSidebar from "../CustomSidebar/CustomSidebar";
 import Projects from "../Projects/Projects";
-import Courses from "../Courses/Courses";
+// import Courses from "../Courses/Courses";
 import NoMatch from "../NoMatch/NoMatch";
 
 function App() {
@@ -22,9 +22,9 @@ function App() {
                         <Route path="/projects">
                             <Projects />
                         </Route>
-                        <Route path="/courses">
-                            <Courses />
-                        </Route>
+                        {/*<Route path="/courses">*/}
+                        {/*    <Courses />*/}
+                        {/*</Route>*/}
                         <Route path="/about">
                             <About />
                         </Route>

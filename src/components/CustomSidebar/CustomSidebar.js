@@ -1,6 +1,6 @@
 import {ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarFooter, SidebarContent} from 'react-pro-sidebar';
 import './CustomSidebar.scss';
-import { BiMenu, BiUser, BiLibrary, BiBookBookmark, BiHome } from 'react-icons/bi';
+import { BiMenu, BiUser, BiBookBookmark, BiHome } from 'react-icons/bi';
 import {useState} from "react";
 import {Link} from "react-router-dom";
 import {FaGithub, FaLinkedin, FaYoutube} from "react-icons/fa";
@@ -29,7 +29,7 @@ function CustomSidebar() {
                         <MenuItem><Link to="/about/resume">Resume</Link></MenuItem>
                     </SubMenu>
                     <MenuItem icon={ <BiBookBookmark/> }><Link to="/projects">Projects</Link></MenuItem>
-                    <MenuItem icon={ <BiLibrary/> }><Link to="/courses">Courses</Link></MenuItem>
+                    {/*<MenuItem icon={ <BiLibrary/> }><Link to="/courses">Courses</Link></MenuItem>*/}
                 </Menu>
             </SidebarContent>
             <SidebarFooter>
