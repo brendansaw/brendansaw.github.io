@@ -40,7 +40,6 @@ function Home() {
                     <td>
                         <ul className="center-ul">
                             <li>Investment</li>
-                            <li>Crypto</li>
                             <li>Computer Peripherals</li>
                             <li>Taekwondo</li>
                             <li>Public Speaking</li>

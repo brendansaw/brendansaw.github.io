@@ -81,6 +81,7 @@ function About() {
             <hr/>
             <h2>PDF Resume (Updated Oct 20, 2021)</h2>
             <embed src={ResumePDF} className="pdf-style"/>
+            <a href={ResumePDF} target="_blank">View in new tab</a>
         </div>
     );
 }

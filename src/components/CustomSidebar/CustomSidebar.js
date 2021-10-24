@@ -16,7 +16,7 @@ function CustomSidebar() {
         <ProSidebar collapsed={ showSidebar }>
             <SidebarHeader>
                 <Menu iconShape="square" className="main-sidebar-section">
-                    <MenuItem icon={ <BiMenu/> } onClick={ toggleSidebar }>Brendan's Website</MenuItem>
+                    <MenuItem icon={ <BiMenu/> } onClick={ toggleSidebar }>Brendan's Portfolio</MenuItem>
                 </Menu>
 
             </SidebarHeader>

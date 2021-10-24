@@ -25,7 +25,7 @@ function About() {
                                     along with a scholarship offer. I was offered the SFU Undergraduate Scholars Entrance
                                     Scholarship with Distinction that covers all tuition and mandatory fees for my undergraduate
                                     degree. <br/>
-                                    I currently have a 4.02/4.33 Cumulative GPA.
+                                    I currently have a 4.02/4.33 Cumulative GPA and have received the President's and Dean's Honour Roll.
                                 </p>
                             </td>
                         </tr>

@@ -55,7 +55,7 @@ const projects = [
         ],
         "description":
             `This project was developed for my Intro to Software Engineering (CMPT 276) course at SFU. 
-                The game utilized original assets designed by our team, and we designed the application using
+                The game utilized original assets designed by our team, and we designed the UI using
                 JavaFX. Involved heavy usage of design patterns and object-oriented programming for game elements and logic.`
     },
     {
