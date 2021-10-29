@@ -10,6 +10,7 @@ const projects = [
     {
         "name": "GreenMaps",
         "image_src": GreenMapsPicture,
+        "img_link": "https://github.com/GreenMaps-app",
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/GreenMaps-app">GitHub</a>
@@ -40,6 +41,7 @@ const projects = [
     {
         "name": "Escape From Corona",
         "image_src": EFCPicture,
+        "img_link": "https://github.com/brendansaw/CMPT-276-Escape-From-Corona",
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/brendansaw/CMPT-276-Escape-From-Corona">GitHub</a>
@@ -61,6 +63,7 @@ const projects = [
     {
         "name": "GrocerEase",
         "image_src": GrocerEasePicture,
+        "img_link": "https://github.com/brendansaw/GrocerEase",
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/brendansaw/GrocerEase">GitHub</a>
@@ -85,6 +88,7 @@ const projects = [
     {
         "name": "Google Marketplace Web Scraper",
         "image_src": WebScraperPicture,
+        "img_link": "https://github.com/brendansaw/Google-Fan-Web-Scraper",
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/brendansaw/Google-Fan-Web-Scraper">GitHub</a>
@@ -108,6 +112,7 @@ const projects = [
     {
         "name": "HackChan",
         "image_src": HackChanPicture,
+        "img_link": "https://github.com/brendansaw/HackChan",
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/brendansaw/HackChan">GitHub</a>
@@ -132,6 +137,7 @@ const projects = [
     {
         "name": "Bazaar Ticker",
         "image_src": BazaarTickerPicture,
+        "img_link": "https://github.com/brendansaw/BazaarTicker",
         "related_links": [
             <li>
                 <FaGithub/> <a href="https://github.com/brendansaw/BazaarTicker">GitHub</a>

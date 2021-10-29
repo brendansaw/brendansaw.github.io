@@ -1,0 +1,22 @@
+.section-curved {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px #54585A;
+
+  &-ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  &-outer {
+    min-width: 50%;
+  }
+
+  &-vertical-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}

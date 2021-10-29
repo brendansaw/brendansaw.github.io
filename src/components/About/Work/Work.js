@@ -9,19 +9,19 @@ function About() {
             <h1>Work</h1>
             <hr/>
             <h2>Greenlight Innovation</h2>
-            <section className="work-section">
-                <div className="work-section-vertical-flex work-section-outer">
+            <section className="section-curved">
+                <div className="section-curved-vertical-flex section-curved-outer">
                     <img src={GreenlightInnovationLogo} className="work-img-width" alt="Job Logo"/>
                     <br/>
                     <b className="text-align-left">Extra Information:</b>
-                    <ul className="work-section-ul">
+                    <ul className="section-curved-ul">
                         <li>Work Period: May 2021 - Dec 2021 (8 months)</li>
                         <li>Location: Burnaby, BC</li>
                     </ul>
                 </div>
-                <div className="work-section-vertical-flex work-section-outer">
+                <div className="section-curved-vertical-flex section-curved-outer">
                     <p><b>Position:</b> Web Developer Co-op</p>
-                    <div className="work-section-vertical-flex">
+                    <div className="section-curved-vertical-flex">
                         <b>Description:</b>
                         <p>
                             I am currently working at Greenlight Innovation as a Web Developer Co-op. In this position,
@@ -41,9 +41,9 @@ function About() {
                             the required data.
                         </p>
                     </div>
-                    <div className="work-section-vertical-flex">
+                    <div className="section-curved-vertical-flex">
                         <b>During my time at the company, I have completed the following:</b>
-                        <ul className="work-section-ul">
+                        <ul className="section-curved-ul">
                             <li>
                                 Developed a tool within the Portal that allows managers and executives to view
                                 time-tracking data per Supply Chain project, department, team, employee and time period
@@ -67,19 +67,19 @@ function About() {
             </section>
             <hr/>
             <h2>CARO Analytical Services</h2>
-            <section className="work-section">
-                <div className="work-section-vertical-flex work-section-outer">
+            <section className="section-curved">
+                <div className="section-curved-vertical-flex section-curved-outer">
                     <img src={CAROLogo} className="work-img-width" alt="Job Logo"/>
                     <br/>
                     <b className="text-align-left">Extra Information:</b>
-                    <ul className="work-section-ul">
+                    <ul className="section-curved-ul">
                         <li>Work Period: May 2019 - Aug 2019 (4 months)</li>
                         <li>Location: Richmond, BC</li>
                     </ul>
                 </div>
-                <div className="work-section-vertical-flex work-section-outer">
+                <div className="section-curved-vertical-flex section-curved-outer">
                     <p><b>Position:</b> IT Support & Admin</p>
-                    <div className="work-section-vertical-flex">
+                    <div className="section-curved-vertical-flex">
                         <b>Description:</b>
                         <p>
                             I worked at CARO Analytical Services in an IT Support & Admin position. I started working
@@ -87,9 +87,9 @@ function About() {
                             general technical issues around the company.
                         </p>
                     </div>
-                    <div className="work-section-vertical-flex">
+                    <div className="section-curved-vertical-flex">
                         <b>During my time at the company, I completed the following:</b>
-                        <ul className="work-section-ul">
+                        <ul className="section-curved-ul">
                             <li>Responded to general technical issues using IT dashboard</li>
                             <li>Wrote script using PowerShell to automatically rename files as per client requests</li>
                             <li>

@@ -1,7 +1,6 @@
+@import "src/components/Modules/Section";
+
 .main-text {
-  border: solid black 3px;
-  padding: 15px;
-  box-shadow: 3px 3px 8px #54585A;
 
   & > ul {
     display: inline-block;

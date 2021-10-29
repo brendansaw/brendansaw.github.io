@@ -16,7 +16,7 @@ function Home() {
             </div>
             </div>
             <hr/>
-            <div className="main-text">
+            <div className="section-curved section-curved-vertical-flex">
                 <p className="home-paragraph">
                     Hi! My name is Brendan and I'm currently a student at Simon Fraser University
                     pursuing a BSc. in Computing Science. I'm currently located around the Vancouver area.
@@ -30,7 +30,7 @@ function Home() {
                     </thead>
                     <tbody>
                     <td>
-                        <ul className="center-ul">
+                        <ul className="center-ul section-curved-ul">
                             <li>Web Development</li>
                             <li>Theoretical Computer Science</li>
                             <li>Data Science</li>
@@ -38,7 +38,7 @@ function Home() {
                         </ul>
                     </td>
                     <td>
-                        <ul className="center-ul">
+                        <ul className="center-ul section-curved-ul">
                             <li>Investment</li>
                             <li>Computer Peripherals</li>
                             <li>Taekwondo</li>

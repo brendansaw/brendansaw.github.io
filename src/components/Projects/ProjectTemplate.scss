@@ -1,28 +1,16 @@
+@import "src/components/Modules/Section";
+
 .project {
-  &-img-width {
-    max-width: 60%;
-  }
-  &-section {
-    display: flex;
-    align-items: center;
-    border: solid black 1px;
-    padding: 15px;
-    box-shadow: 3px 3px 8px #54585A;
-
-    &-ul {
-      display: inline-block;
-      text-align: left;
+  &-img {
+    &-width {
+      max-width: 60%;
     }
-
-    &-outer {
-      min-width: 50%;
-    }
-
-    &-vertical-flex {
+    &-align {
       display: flex;
-      flex-direction: column;
     }
   }
+
+
   &-github-link {
     color: #4172d2;
   }
