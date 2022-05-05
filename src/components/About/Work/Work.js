@@ -1,12 +1,43 @@
 import "./Work.scss";
 import GreenlightInnovationLogo from "../../../images/jobs/greenlightinnovation.svg";
 import CAROLogo from "../../../images/jobs/caro.png";
+import AWSLogo from "../../../images/jobs/aws.png";
 
 function About() {
     document.title = "Brendan Saw - Work"
     return (
         <div className="Work">
             <h1>Work</h1>
+            <hr/>
+            <h2>Amazon Web Services</h2>
+            <section className="section-curved">
+                <div className="section-curved-vertical-flex section-curved-outer">
+                    <img src={AWSLogo} className="work-img-width" alt="Job Logo"/>
+                    <br/>
+                    <b className="text-align-left">Extra Information:</b>
+                    <ul className="section-curved-ul">
+                        <li>Work Period: May 2022 - Aug 2022 (4 months)</li>
+                        <li>Location: Vancouver, BC</li>
+                    </ul>
+                </div>
+                <div className="section-curved-vertical-flex section-curved-outer">
+                    <p><b>Position:</b> Software Development Engineer Intern</p>
+                    <div className="section-curved-vertical-flex">
+                        <b>Description:</b>
+                        <p>
+                            I am working in the AWS S3 Lifecycle team in Vancouver.
+                        </p>
+                    </div>
+                    <div className="section-curved-vertical-flex">
+                        <b>During my time at the company, I completed the following:</b>
+                        <ul className="section-curved-ul">
+                            <li>
+                                TBD.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <hr/>
             <h2>Greenlight Innovation</h2>
             <section className="section-curved">
@@ -24,25 +55,25 @@ function About() {
                     <div className="section-curved-vertical-flex">
                         <b>Description:</b>
                         <p>
-                            I am currently working at Greenlight Innovation as a Web Developer Co-op. In this position,
-                            I am tasked with writing and testing our main internal web application - the Portal.
-                            This application provides ERP functionality for the company, allowing employees to view
-                            part shortages and examine KPIs. Additionally, the app also serves as the main
+                            I worked at Greenlight Innovation as a Web Developer Co-op. In this position,
+                            I was tasked with writing and testing the main internal web application - the Portal.
+                            This application provided ERP functionality for the company, allowing employees to view
+                            part shortages and examine KPIs. Additionally, the app also served as the main
                             time-tracking software within the company, and as a result of having all information
-                            stored by our web application, we are able to provide analytics on the time-tracking
+                            stored by the web application, was able to provide analytics on the time-tracking
                             information to serve generalized reports to managers and executives.
                         </p>
 
                         <p>
                             The Portal is written using the Django templating language with assistance from jQuery for
-                            front-end interactive features. We are utilizing Django's built-in ORM to serve data from
-                            our PostgreSQL database to the users. Additionally, for any scripts that aren't able to
-                            make use of the templating functionalities, we also use Django REST Framework to provide them
+                            front-end interactive features. Django's built-in ORM was utilized to serve data from
+                            the PostgreSQL database to the users. Additionally, for any scripts that weren't able to
+                            make use of the templating functionalities, the Django REST Framework was used to provide
                             the required data.
                         </p>
                     </div>
                     <div className="section-curved-vertical-flex">
-                        <b>During my time at the company, I have completed the following:</b>
+                        <b>During my time at the company, I completed the following:</b>
                         <ul className="section-curved-ul">
                             <li>
                                 Developed a tool within the Portal that allows managers and executives to view
