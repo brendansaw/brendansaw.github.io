@@ -79,7 +79,7 @@ function About() {
             </table>
 
             <hr/>
-            <h2>PDF Resume (Updated Oct 20, 2021)</h2>
+            <h2>PDF Resume (Updated May 4, 2022)</h2>
             <embed src={ResumePDF} className="pdf-style"/>
             <a href={ResumePDF} target="_blank" rel="noreferrer">View in new tab</a>
         </div>

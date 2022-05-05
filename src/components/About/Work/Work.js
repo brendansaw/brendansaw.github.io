@@ -112,6 +112,7 @@ function About() {
                     </div>
                 </div>
             </section>
+            <br/>
         </div>
     );
 }
