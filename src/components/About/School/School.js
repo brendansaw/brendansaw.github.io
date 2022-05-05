@@ -24,79 +24,12 @@ function About() {
                                     I started at SFU in the semester of Fall 2019 with direct admission into Computing Science
                                     along with a scholarship offer. I was offered the SFU Undergraduate Scholars Entrance
                                     Scholarship with Distinction that covers all tuition and mandatory fees for my undergraduate
-                                    degree. <br/>
-                                    I currently have a 4.02/4.33 Cumulative GPA and have received the President's and Dean's Honour Roll.
+                                    degree. <br/><br/>
+                                    I currently have a <b>4.02/4.33 Cumulative GPA</b> and have received the President's and Dean's Honour Roll multiple times.
+                                    <br/><br/>
+                                    Courses Taken: Operating Systems, Data Structures, Artificial Intelligence,
+                                    Functional Programming, Databases, Software Engineering, Computer Systems
                                 </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colSpan="2">
-                                <div className="school-vert-flex">
-                                    <b>The most career-relevant courses that I've taken so far in my university degree are:</b>
-                                    <ul className="school-description-ul">
-                                        <li>
-                                            CMPT 354 - Database Systems I
-                                            <ul>
-                                                <li>Taught about ER diagrams</li>
-                                                <li>Learned SQL commands</li>
-                                                <li>Relational algebra</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            CMPT 276 - Intro to Software Engineering
-                                            <ul>
-                                                <li>Learned multiple design patterns and OOP in Java</li>
-                                                <li>Unit and integration testing</li>
-                                                <li>Industry software development methods, and learned about Agile</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            CMPT 295 - Intro to Computer Systems
-                                            <ul>
-                                                <li>Learned about RISC-V assembly</li>
-                                                <li>Created memory allocator using explicit free list</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            CMPT 225 - Data Structures and Programming
-                                            <ul>
-                                                <li>Programmed Skip List, Max Heap, AVL Tree data structures in C++</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            CMPT 218 - Special Topics in Computing Science: Client-side Web Systems
-                                            <ul>
-                                                <li>Wrote web-applications using Angular and TypeScript</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-
-                                    <b>Some other interesting courses that I've taken are:</b>
-                                    <ul className="school-description-ul">
-                                        <li>
-                                            MACM 316 - Numerical Analysis I
-                                            <ul>
-                                                <li>Explored effects of perturbations on eigenvalues and condition numbers</li>
-                                                <li>
-                                                    Created an SEIR model in MATLAB and adjusted model to different R<sub>0</sub> values
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            CMPT 308 - Computability and Complexity
-                                            <ul>
-                                                <li>Learned about Turing machines, halting problem, decidability, P=NP</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            MATH 240 - Algebra I: Linear Algebra
-                                            <ul>
-                                                <li>Learned about matrices with proofs</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
                             </td>
                         </tr>
 
