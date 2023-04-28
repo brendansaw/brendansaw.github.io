@@ -1,6 +1,6 @@
 import "./Work.scss";
 import GreenlightInnovationLogo from "../../../images/jobs/greenlightinnovation.svg";
-import CAROLogo from "../../../images/jobs/caro.png";
+// import CAROLogo from "../../../images/jobs/caro.png";
 import AWSLogo from "../../../images/jobs/aws.png";
 
 function About() {
