@@ -4,7 +4,6 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -15,9 +14,25 @@ jobs:
           node-version: '18.x'
       - run: npm ci
       - run: npm run build --if-present
+      
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2.0.4
       - name: Deploy GitHub Pages site
         uses: actions/deploy-pages@v2.0.4
         with:
-          # GitHub token
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
