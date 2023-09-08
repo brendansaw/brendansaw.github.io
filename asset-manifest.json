@@ -1,34 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.0484934d.chunk.css",
-    "main.js": "/static/js/main.613d0dc6.chunk.js",
-    "main.js.map": "/static/js/main.613d0dc6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.36d1083e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.36d1083e.js.map",
-    "static/js/2.c49b5077.chunk.js": "/static/js/2.c49b5077.chunk.js",
-    "static/js/2.c49b5077.chunk.js.map": "/static/js/2.c49b5077.chunk.js.map",
-    "static/js/3.ffa9cf43.chunk.js": "/static/js/3.ffa9cf43.chunk.js",
-    "static/js/3.ffa9cf43.chunk.js.map": "/static/js/3.ffa9cf43.chunk.js.map",
+    "main.css": "/static/css/main.3bfc954c.css",
+    "main.js": "/static/js/main.62f51213.js",
+    "static/js/787.f08b8163.chunk.js": "/static/js/787.f08b8163.chunk.js",
+    "static/media/escapefromcorona.png": "/static/media/escapefromcorona.9ca9a1dfa111442fb29e.png",
+    "static/media/greenmaps.png": "/static/media/greenmaps.9c6d16e0e050f3807a6f.png",
+    "static/media/github-profile-picture.jpg": "/static/media/github-profile-picture.801b45d178969adcb83d.jpg",
+    "static/media/hackchan.png": "/static/media/hackchan.d253574c1485ebc3b0a7.png",
+    "static/media/bazaarticker.png": "/static/media/bazaarticker.b9f959eb871059d6e6b2.png",
+    "static/media/googlewebscraper.png": "/static/media/googlewebscraper.4802a4632170c8d13491.png",
+    "static/media/grocerease.png": "/static/media/grocerease.befd68794ea3cfd9b9be.png",
+    "static/media/dp-programme-logo-en.png": "/static/media/dp-programme-logo-en.006624cdad4ce521fb44.png",
+    "static/media/resume.pdf": "/static/media/resume.95e80603483d956da2c2.pdf",
+    "static/media/aws.png": "/static/media/aws.7cfb1f5c177359a0bd66.png",
+    "static/media/greenlightinnovation.svg": "/static/media/greenlightinnovation.18a3b09a1abd97ef83e3ecde493db668.svg",
     "index.html": "/index.html",
-    "static/css/main.0484934d.chunk.css.map": "/static/css/main.0484934d.chunk.css.map",
-    "static/js/2.c49b5077.chunk.js.LICENSE.txt": "/static/js/2.c49b5077.chunk.js.LICENSE.txt",
-    "static/media/aws.7cfb1f5c.png": "/static/media/aws.7cfb1f5c.png",
-    "static/media/bazaarticker.b9f959eb.png": "/static/media/bazaarticker.b9f959eb.png",
-    "static/media/caro.04415591.png": "/static/media/caro.04415591.png",
-    "static/media/dp-programme-logo-en.006624cd.png": "/static/media/dp-programme-logo-en.006624cd.png",
-    "static/media/escapefromcorona.9ca9a1df.png": "/static/media/escapefromcorona.9ca9a1df.png",
-    "static/media/github-profile-picture.801b45d1.jpg": "/static/media/github-profile-picture.801b45d1.jpg",
-    "static/media/googlewebscraper.4802a463.png": "/static/media/googlewebscraper.4802a463.png",
-    "static/media/greenlightinnovation.18a3b09a.svg": "/static/media/greenlightinnovation.18a3b09a.svg",
-    "static/media/greenmaps.9c6d16e0.png": "/static/media/greenmaps.9c6d16e0.png",
-    "static/media/grocerease.befd6879.png": "/static/media/grocerease.befd6879.png",
-    "static/media/hackchan.d253574c.png": "/static/media/hackchan.d253574c.png",
-    "static/media/resume.14679dd2.pdf": "/static/media/resume.14679dd2.pdf"
+    "main.3bfc954c.css.map": "/static/css/main.3bfc954c.css.map",
+    "main.62f51213.js.map": "/static/js/main.62f51213.js.map",
+    "787.f08b8163.chunk.js.map": "/static/js/787.f08b8163.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.36d1083e.js",
-    "static/js/2.c49b5077.chunk.js",
-    "static/css/main.0484934d.chunk.css",
-    "static/js/main.613d0dc6.chunk.js"
+    "static/css/main.3bfc954c.css",
+    "static/js/main.62f51213.js"
   ]
 }
