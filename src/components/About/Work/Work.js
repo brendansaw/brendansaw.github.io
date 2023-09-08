@@ -10,27 +10,34 @@ function About() {
             <h1>Work Experience</h1>
             <hr/>
             <h2>Amazon Web Services</h2>
-            <section className="section-curved">
+            <section className="section-curved text-align-left">
                 <div className="section-curved-vertical-flex section-curved-outer">
                     <img src={AWSLogo} className="work-img-width" alt="Job Logo"/>
                     <br/>
                     <b className="text-align-left">Extra Information:</b>
                     <ul className="section-curved-ul">
-                        <li>Work Period: May 2022 - Aug 2022 (4 months)</li>
+                        <li>Work Period</li>
+                        <ul>
+                            <li>July 2023 - Present</li>
+                            <li>May 2022 - Aug 2022 (4 months)</li>
+                        </ul>
                         <li>Location: Vancouver, BC</li>
                     </ul>
                     <b className="text-align-left">Languages:</b>
                     <ul className="section-curved-ul">
-                        <li>TBD</li>
+                        <li>Java</li>
+                        <li>TypeScript</li>
+                        <li>Ruby</li>
+                        <li>Python</li>
                     </ul>
                 </div>
                 <div className="section-curved-vertical-flex section-curved-outer">
 
-                    <p><b>Position:</b> Software Development Engineer Intern</p>
+                    <p><b>Position:</b> Software Development Engineer</p>
                     <div className="section-curved-vertical-flex">
                         <b>Description:</b>
                         <p>
-                            I am working in the AWS S3 Lifecycle team in Vancouver.
+                            Returned to AWS S3 Lifecycle team in Vancouver.
                         </p>
                     </div>
                     <div className="section-curved-vertical-flex">
@@ -41,11 +48,44 @@ function About() {
                             </li>
                         </ul>
                     </div>
+
+                    <hr/>
+
+                    <p><b>Position:</b> Software Development Engineer Intern</p>
+                    <div className="section-curved-vertical-flex">
+                        <b>Description:</b>
+                        <p>
+                            I worked in the AWS S3 Lifecycle team in Vancouver.
+                        </p>
+                    </div>
+                    <div className="section-curved-vertical-flex">
+                        <b>During my time at the company, I completed the following:</b>
+                        <ul className="section-curved-ul">
+                            <li>
+                                Designed and deployed a serverless
+                                (Lambda (Java/TypeScript), Step Functions, EventBridge)
+                                alternative to an internal monitoring application,
+                                in turn reducing team operational burden
+                            </li>
+                            <li>
+                                Deployed the application using AWS Cloud Development Kit
+                                to create AWS CloudFormation stacks, migrating all workflows to the new architecture
+                            </li>
+                            <li>
+                                Created dashboards and alarms using Amazon CloudWatch
+                                metrics emitted from the system workflows
+                            </li>
+                            <li>
+                                Wrote unit tests for the serverless application,
+                                achieving ~80% line coverage within the new serverless application
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <hr/>
             <h2>Greenlight Innovation</h2>
-            <section className="section-curved">
+            <section className="section-curved text-align-left">
                 <div className="section-curved-vertical-flex section-curved-outer">
                     <img src={GreenlightInnovationLogo} className="work-img-width" alt="Job Logo"/>
                     <br/>

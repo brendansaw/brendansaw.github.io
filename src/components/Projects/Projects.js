@@ -8,7 +8,7 @@ function Projects() {
 
     return (
         <div className="Projects">
-            <h1>Projects That I've Created</h1>
+            <h1>Projects</h1>
             <hr/>
             {projectsListData.map((item, index) => {
                 return <ProjectTemplate values={item}/>

@@ -20,15 +20,17 @@ function About() {
                             </td>
                             <td>
                                 <p>
-                                    I am currently a {calculateYearNumber()} year SFU student studying Computing Science.
+                                    I graduated in Spring 2023 from SFU with a BSc in Computing Science.
                                     I started at SFU in the semester of Fall 2019 with direct admission into Computing Science
                                     along with a scholarship offer. I was offered the SFU Undergraduate Scholars Entrance
                                     Scholarship with Distinction that covers all tuition and mandatory fees for my undergraduate
                                     degree. <br/><br/>
-                                    I currently have a <b>4.02/4.33 Cumulative GPA</b> and have received the President's and Dean's Honour Roll multiple times.
+                                    I graduated First Class with Distinction, with a
+                                    <b> 4.03/4.33 CGPA</b> and received the President's and Dean's Honour Roll multiple times.
                                     <br/><br/>
-                                    Courses Taken: Operating Systems, Data Structures, Artificial Intelligence,
-                                    Functional Programming, Databases, Software Engineering, Computer Systems
+                                    Courses Taken: Distributed Systems, Databases, Software Engineering,
+                                    Operating Systems, Data Structures, Artificial Intelligence,
+                                    Functional Programming, Computer Systems
                                 </p>
                             </td>
                         </tr>
