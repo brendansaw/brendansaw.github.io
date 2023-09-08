@@ -54,34 +54,4 @@ function About() {
     );
 }
 
-/**
- * Calculate the current academic year based on the current year and the academic year that I started at SFU
- * @returns {string} String that represents the current academic year that I am in
- */
-function calculateYearNumber() {
-    // constants that represent my starting time at SFU
-    const startingYear = 2019;
-    const startingMonth = 9;
-
-    let currentDate = new Date();
-    let currentYear = currentDate.getFullYear();
-    let currentMonth = currentDate.getMonth() + 1;
-    let currentAcademicYear = currentYear - startingYear;
-    if (startingMonth < currentMonth) {
-        currentAcademicYear += 1;
-    }
-
-    return getNumberWithOrdinal(currentAcademicYear)
-}
-
-/**
- * Source: https://stackoverflow.com/a/31615643
- * @param n Number that we want to generate a string with ordinal for
- * @returns {string} String representing number with ordinal
- */
-function getNumberWithOrdinal(n) {
-    let s = ["th", "st", "nd", "rd"], v = n % 100;
-    return n + (s[(v - 20) % 10] || s[v] || s[0]);
-}
-
 export default About;
