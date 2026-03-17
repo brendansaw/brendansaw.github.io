@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.3bfc954c.css",
-    "main.js": "/static/js/main.62f51213.js",
-    "static/js/787.f08b8163.chunk.js": "/static/js/787.f08b8163.chunk.js",
+    "main.css": "/static/css/main.817df482.css",
+    "main.js": "/static/js/main.b1cee4cc.js",
+    "static/js/453.42d0f176.chunk.js": "/static/js/453.42d0f176.chunk.js",
     "static/media/escapefromcorona.png": "/static/media/escapefromcorona.9ca9a1dfa111442fb29e.png",
     "static/media/greenmaps.png": "/static/media/greenmaps.9c6d16e0e050f3807a6f.png",
     "static/media/github-profile-picture.jpg": "/static/media/github-profile-picture.801b45d178969adcb83d.jpg",
@@ -15,12 +15,12 @@
     "static/media/aws.png": "/static/media/aws.7cfb1f5c177359a0bd66.png",
     "static/media/greenlightinnovation.svg": "/static/media/greenlightinnovation.18a3b09a1abd97ef83e3ecde493db668.svg",
     "index.html": "/index.html",
-    "main.3bfc954c.css.map": "/static/css/main.3bfc954c.css.map",
-    "main.62f51213.js.map": "/static/js/main.62f51213.js.map",
-    "787.f08b8163.chunk.js.map": "/static/js/787.f08b8163.chunk.js.map"
+    "main.817df482.css.map": "/static/css/main.817df482.css.map",
+    "main.b1cee4cc.js.map": "/static/js/main.b1cee4cc.js.map",
+    "453.42d0f176.chunk.js.map": "/static/js/453.42d0f176.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bfc954c.css",
-    "static/js/main.62f51213.js"
+    "static/css/main.817df482.css",
+    "static/js/main.b1cee4cc.js"
   ]
 }
