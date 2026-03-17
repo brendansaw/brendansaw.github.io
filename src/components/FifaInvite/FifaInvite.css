@@ -1,0 +1,119 @@
+:root {
+    --fifa-dark-blue: #0a3d6b;
+    --grass-green: #2d6a2d;
+    --gold: #ffd700;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.4);
+
+    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --font-display: Georgia, 'Times New Roman', serif;
+    --border-radius: 12px;
+    --transition: 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    font-family: var(--font-main);
+    background: var(--fifa-dark-blue);
+    color: var(--white);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 2rem 1rem;
+    background: linear-gradient(
+        160deg,
+        var(--fifa-dark-blue) 0%,
+        var(--grass-green) 50%,
+        var(--fifa-dark-blue) 100%
+    );
+}
+
+.hero__bg-grass {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        repeating-linear-gradient(
+            90deg,
+            rgba(255,255,255,0.03) 0px,
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px,
+            transparent 60px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,0.03) 0px,
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px,
+            transparent 60px
+        );
+    pointer-events: none;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+    width: 100%;
+}
+
+.hero__eyebrow {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--fifa-dark-blue);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 1.25rem;
+    animation: fadeSlideDown 0.6s ease both;
+}
+
+.hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--white);
+    text-shadow: 0 4px 24px var(--shadow);
+    animation: fadeSlideUp 0.7s 0.1s ease both;
+}
+
+.hero__title span {
+    color: var(--gold);
+}
+
+.hero__subtitle {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 1rem;
+    animation: fadeSlideUp 0.7s 0.2s ease both;
+}
+
+.hero__ball-container {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
