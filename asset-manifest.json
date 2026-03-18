@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.817df482.css",
-    "main.js": "/static/js/main.7715a8b4.js",
+    "main.css": "/static/css/main.6872a8ba.css",
+    "main.js": "/static/js/main.be6e2d23.js",
     "static/js/453.42d0f176.chunk.js": "/static/js/453.42d0f176.chunk.js",
     "static/media/escapefromcorona.png": "/static/media/escapefromcorona.9ca9a1dfa111442fb29e.png",
     "static/media/greenmaps.png": "/static/media/greenmaps.9c6d16e0e050f3807a6f.png",
@@ -15,12 +15,12 @@
     "static/media/aws.png": "/static/media/aws.7cfb1f5c177359a0bd66.png",
     "static/media/greenlightinnovation.svg": "/static/media/greenlightinnovation.18a3b09a1abd97ef83e3ecde493db668.svg",
     "index.html": "/index.html",
-    "main.817df482.css.map": "/static/css/main.817df482.css.map",
-    "main.7715a8b4.js.map": "/static/js/main.7715a8b4.js.map",
+    "main.6872a8ba.css.map": "/static/css/main.6872a8ba.css.map",
+    "main.be6e2d23.js.map": "/static/js/main.be6e2d23.js.map",
     "453.42d0f176.chunk.js.map": "/static/js/453.42d0f176.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.817df482.css",
-    "static/js/main.7715a8b4.js"
+    "static/css/main.6872a8ba.css",
+    "static/js/main.be6e2d23.js"
   ]
 }
