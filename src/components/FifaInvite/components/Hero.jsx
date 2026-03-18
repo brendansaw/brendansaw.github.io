@@ -6,7 +6,7 @@ export default function Hero() {
                 FIFA World Cup <span>2026</span>
             </h1>
             <p className="hero__subtitle">
-                Join for the ultimate group state showdown -<br />
+                Join for the ultimate group stage showdown -<br />
                 live at BC Place, Vancouver
             </p>
         </>

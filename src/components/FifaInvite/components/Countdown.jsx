@@ -1,3 +1,4 @@
+import './Countdown.css'
 import { useState, useEffect, useRef } from "react";
 
 const MATCH_DATE = new Date('2026-06-26T18:00:00-07:00');
@@ -54,10 +55,10 @@ export default function Countdown() {
     }
 
     const units = [
-        { key: 'days', label: 'Days', value: timeLeft.days },
-        { key: 'hours', label: 'Hours', value: timeLeft.hours },
-        { key: 'minutes', label: 'Minutes', value: timeLeft.minutes },
-        { key: 'seconds', label: 'Seconds', value: timeLeft.seconds },
+        { key: 'days', label: 'Days', value: pad(timeLeft.days) },
+        { key: 'hours', label: 'Hours', value: pad(timeLeft.hours) },
+        { key: 'minutes', label: 'Minutes', value: pad(timeLeft.minutes) },
+        { key: 'seconds', label: 'Seconds', value: pad(timeLeft.seconds) },
     ];
 
     return (

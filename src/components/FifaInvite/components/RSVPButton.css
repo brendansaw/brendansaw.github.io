@@ -1,0 +1,134 @@
+.rsvp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    animation: fadeSlideUp 0.7s 0.6s ease both;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* width: 100%; */
+    padding: 0.9rem 1.5rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--shadow);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn--primary {
+    background: linear-gradient(135deg, var(--gold), #e6b800);
+    color: var(--fifa-dark-blue);
+    box-shadow: 0 4px 16px rgba(255, 215, 0, 0.35);
+}
+
+.btn--secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn--secondary:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.btn__icon {
+    font-size: 1.1rem;
+}
+
+.rsvp__cal-wrapper {
+    position: relative;
+    flex: 1;
+    width: 100%;
+}
+
+.rsvp__cal-wrapper .btn {
+    width: 100%;
+}
+
+.cal-dropdown {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    background: #0f2a4a;
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    overflow: hidden;
+    animation: fadeSlideUp 0.15s ease;
+}
+
+.cal-dropdown__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background var(--transition);
+}
+
+.cal-dropdown__item:last-child {
+    border-bottom: none;
+}
+
+.cal-dropdown__item:hover {
+    background: rgba(255, 215, 0, 0.1);
+    color: var(--gold);
+}
+
+.cal-dropdown__icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+    .rsvp {
+        flex-direction: row;
+        max-width: 520px;
+    }
+
+    .btn {
+        width: auto;
+        flex: 1;
+    }
+}

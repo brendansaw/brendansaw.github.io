@@ -1,0 +1,28 @@
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    animation: fadeSlideUp 0.7s 0.7s ease both;
+}
+
+.footer__logo {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer__text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.6;
+}
+
+.footer__text a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.footer__text a:hover {
+    color: var(--gold);
+}
