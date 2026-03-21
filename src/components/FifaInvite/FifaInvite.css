@@ -133,3 +133,27 @@ html {
         padding: 3rem 2rem;
     }
 }
+
+.ball {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.12;
+    animation: floatBall linear infinite;
+    user-select: none;
+}
+
+.ball:nth-child(1) { left: 8%; font-size: 1.5rem; animation-duration: 14s; animation-delay: 0s; top: 10%; }
+.ball:nth-child(2) { left: 20%; font-size: 2.5rem; animation-duration: 18s; animation-delay: -3s; top: 60%; }
+.ball:nth-child(3) { left: 35%; font-size: 1rem; animation-duration: 12s; animation-delay: -6s; top: 80%; }
+.ball:nth-child(4) { left: 55%; font-size: 3rem; animation-duration: 20s; animation-delay: -1s; top: 20%; }
+.ball:nth-child(5) { left: 70%; font-size: 1.8rem; animation-duration: 15s; animation-delay: -9s; top: 50%; }
+.ball:nth-child(6) { left: 85%; font-size: 2.2rem; animation-duration: 17s; animation-delay: -4s; top: 30%; }
+.ball:nth-child(7) { left: 92%; font-size: 1.2rem; animation-duration: 11s; animation-delay: -7s; top: 70%; }
+.ball:nth-child(8) { left: 47%; font-size: 2rem; animation-duration: 16s; animation-delay: -12s; top: 90%; }
+
+@keyframes floatBall {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0;}
+    10% { opacity: 0.12; }
+    90% { opacity: 0.12; }
+    100% { transform: translateY(-120px) rotate(720deg); opacity: 0; }
+}

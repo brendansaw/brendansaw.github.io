@@ -1,0 +1,229 @@
+.teams {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba( 255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 1.5rem 1rem;
+    margin: 2rem 0;
+    animation: fadeSlideUp 0.7 0.3 ease both;
+    position: relative;
+    z-index: 1;
+}
+
+.teams__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 120px;
+}
+
+.team__flag-img {
+    width: 100px;
+    height: 68px;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px var(--shadow);
+    object-fit: cover;
+    display: block;
+}
+
+.team__name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.team__label {
+    font-size: 0.7rem;
+    color: rgba( 255, 255, 255, 0.6);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.vs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.vs__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 6vw, 3rem);
+    font-weight: 900;
+    color: var(--gold);
+    text-shadow: 0 2px 12px rgba(255, 215, 0, 0.5);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.vs__match {
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+@keyframes pulse {
+    0%, 100% {transform: scale(1); text-shadow: 0 2px 12px rgba(255, 215, 0, 0.5);}
+    50% {transform: scale(1.12); text-shadow: 0 4px 24px rgba(255, 215, 0, 0.9);}
+}
+
+.team--clickable {
+    cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition);
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    margin: -0.75rem;
+}
+
+.team--clickable:hover {
+    transform: scale(1.05);
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.team--clickable:active {
+    transform: scale(0.98);
+}
+
+.team-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 1rem;
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0;}
+    to {opacity: 1;}
+}
+
+.team-modal {
+    background: linear-gradient(135deg, var(--fifa-dark-blue) 0%, #1a1a1a 100%);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    animation: modalSlideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0, 0, 40 rgba(255, 215, 0, 0.1);
+}
+
+@keyframes modalSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.team-modal__close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    line-height: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background var(--transition), color var(--transition);
+}
+
+.team-modal__close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.team-modal__flag {
+    font-size: 5rem;
+    filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.5));
+    margin-bottom: 0.5rem;
+}
+
+.team-modal__name {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+}
+
+.team-modal__nickname {
+    font-size: 1rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0.25rem 0 1.5rem;
+}
+
+.team-modal__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.team-modal__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    padding: 0.75rem 0.5rem;
+}
+
+.team-modal__stat-value {
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+}
+
+.team-modal__stat-label {
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-top: 0.25rem;
+}
+
+.team-modal__stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.team-modal__stars span:first-child,
+.team-modal__stars span:last-child {
+    color: var(--gold);
+}
