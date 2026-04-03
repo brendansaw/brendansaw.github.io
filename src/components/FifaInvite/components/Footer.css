@@ -1,9 +1,9 @@
 .footer {
     text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 1rem;
+    padding: 3rem 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     animation: fadeSlideUp 0.7s 0.7s ease both;
+    background-color: var(--fifa-dark-blue);
 }
 
 .footer__logo {

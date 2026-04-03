@@ -1,0 +1,576 @@
+@keyframes splashSpotOn {
+    0% { opacity: 0; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.4; }
+}
+
+@keyframes splashShadowGrow {
+    0% {opacity: 0; transform: scale(0.2);}
+    50% {opacity: 1; transform: scale(1.3);}
+    100% {opacity: 0.8; transform: scale(1);}
+}
+
+@keyframes splashRing {
+    0% {opacity: 1; transform: scale(0.3);}
+    100% {opacity: 0; transform: scale(3);}
+}
+
+
+@keyframes splashFadeUp {
+    0% {opacity: 0; transform: translateY(30px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes splashScaleIn {
+    0% {opacity: 0; transform: scale(0.5);}
+    100% {opacity: 1; transform: scale(1);}
+}
+
+@keyframes splashYearIn {
+    0% {opacity: 0; transform: scale(0.3) translateY(50px);}
+    100% {opacity: 1; transform: scale(1) translateY(0);}
+}
+
+@keyframes splashStripeIn {
+    0% {transform: scaleX(0);}
+    100% {transform: scaleX(1);}
+}
+
+@keyframes splashFadeIn {
+    0% { opacity: 0;}
+    100% {opacity: 1; }
+}
+
+@keyframes splashTeamFlagIn {
+    0% {opacity: 0; transform: scale(0.5) rotate(-15deg);}
+    100% {opacity: 1; transform: scale(1) rotate(0deg);}
+}
+
+@keyframes splashSlideIn {
+    0% {opacity: 0; transform: translateX(calc(var(--slide-from) * 1.6));}
+    100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes splashVsIn {
+    0% {opacity: 0; transform: scale(0.3) rotate(-20deg);}
+    0% {transform: scale(1.2) rotate(10deg);}
+    100% {opacity: 1; transform: scale(1) rotate(0deg);}
+}
+
+@keyframes splashParticle {
+    0% {opacity: 1; left: 50%; top: 50%; transform: scale(0);}
+    100% {opacity: 0; left: calc(50% + var(--i) * 3vw - 75vw); top: calc(50% + var(--i) * 2vw - 50vw); transform: scale(1);}
+}
+
+
+@keyframes splashFlash {
+    0% { opacity: 0.9; }
+    100% { opacity: 0; }
+}
+
+@keyframes splashExit {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.1); pointer-events: none; }
+}
+
+.splash {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #000;
+    overflow: hidden;
+
+    &__darkness {
+        position: absolute;
+        inset: 0;
+        background: #000;
+        z-index: 5;
+        transition: opacity 0.3s ease;
+    }
+
+    &:not(.phase-0) &__darkness {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &__spotlights {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    &__spot {
+        position: absolute;
+        width: 150px;
+        height: 400px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
+        filter: blur(40px);
+        opacity: 0;
+        transform-origin: top center;
+
+        &--1 { top: -50px; left: 10%; transform: rotate(-25deg); animation-delay: 0s;}
+        &--2 { top: -50px; left: 35%; transform: rotate(-8deg); animation-delay: 0.1s;}
+        &--3 { top: -50px; right: 35%; transform: rotate(8deg); animation-delay: 0.1s;}
+        &--4 { top: -50px; right: 10%; transform: rotate(25deg); animation-delay: 0s;}
+    }
+
+    &.phase-1 &__spot, &.phase-2 &__spot {
+        animation: splashSpotOn 0.8s ease-out forwards;
+    }
+
+    &__ball-scene {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    &__ball {
+        position: absolute;
+        left: 50%;
+        font-size: clamp(6rem, 25vw, 12rem);
+        filter: drop-shadow(0 0 40px rgba(255, 215, 0, 0.7));
+        line-height: 1;
+    }
+
+    &__ball-shadow {
+        position: absolute;
+        bottom: -80px;
+        left: 50%;
+        width: 150px;
+        height: 30px;
+        margin-left: -75px;
+        background: radial-gradient(ellipse, rgba(0,0,0,0.6) 0%, transparent 70%);
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    &.phase-1 &__ball-shadow {
+        animation: splashShadowGrow 1.2s 0.4s ease-out forwards;
+    }
+
+    &__impact-ring {
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        width: 100px;
+        height: 20px;
+        margin-left: -50px;
+        border: 4px solid rgba(255, 215, 0, 0.9);
+        border-radius: 50%;
+        opacity: 0;
+
+        &--2 {
+            width: 160px;
+            margin-left: -80px;
+            border-width: 2px;
+        }
+    }
+
+    &.phase-1 &__impact-ring {animation: splashing 0.8 0.50s ease-out forwards;}
+    &.phase-1 &__impact-ring--2 {animation: splashing 0.9 0.55s ease-out forwards;}
+
+    &__title-scene {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &.phase-2 &__title-scene {opacity: 1;}
+
+    &:not(.phase-0):not(.phase-1):not(.phase-2) &__title-scene {
+        transition: opacity 0.5s ease;
+    }
+
+    &__title-pre {
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
+        font-weight: 600;
+        letter-spacing: 0.5em;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    &.phase-2 &__title-pre {
+        animation: splashFadeUp 0.6s ease-out forwards;
+    }
+
+    &__title-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+
+    &__fifa {
+        font-family: var(--font-display);
+        font-size: clamp(4rem, 18vw, 10rem);
+        font-weight: 900;
+        color: #fff;
+        text-shadow: 0 0 80px rgba(255, 255, 255, 0.6);
+        line-height: 0.9;
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    &.phase-2 &__fifa {
+        animation: splashScaleIn 0.7s 0.15s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+
+    &__wc {
+        font-family: var(--font-display);
+        font-size: clamp(1.8rem, 8vw, 4rem);
+        font-weight: 900;
+        background: linear-gradient(135deg, #ffd700 0%, #fff 50%, #ffd700 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    &.phase-2 &__wc {
+        animation: splashFadeUp 0.6s 0.3s ease-out forwards;
+    }
+
+    &__title-year {
+        font-family: var(--font-display);
+        font-size: clamp(5rem, 22vw, 14rem);
+        font-weight: 900;
+        background: linear-gradient(180deg, #ffd700 0%, #ffed4a 30%, #fff 50%, #ffed4a 70%, #ffd700 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        filter: drop-shadow(0 8px 60px rgba(255, 215, 0, 0.9));
+        line-height: 0.85;
+        opacity: 0;
+        transform: scale(0.3) translateY(50px);
+    }
+
+    &.phase-2 &__title-year {
+        animation: splashYearIn 0.8s 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+
+    &__title-gs {
+        font-size: clamp(0.6rem, 2vw, 0.9rem);
+        font-weight: 700;
+        letter-spacing: 0.4em;
+        color: var(--gold);
+        text-transform: uppercase;
+        margin-top: 2.5rem;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    &.phase-2 &__title-gs {
+        animation: splashFadeUp 0.5s 0.7s ease-out forwards;
+    }
+
+    &__team-scene {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 15;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &.phase-3 &__team-scene--belgium { opacity: 1; }
+
+    &.phase-4 &__team-scene--belgium {opacity: 0; transition: opacity 0.5s ease;}
+
+    &.phase-4 &__team-scene--nz { opacity: 1; }
+
+    &.phase-5, &.phase-6 {
+        .splash__team-scene--belgium, .splash__team-scene--nz {
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+    }
+
+    &__team-bg {
+        position: absolute;
+        inset: 0;
+
+        &--belgium {
+            display: flex;
+            
+            .splash__stripe {
+                flex: 1;
+                transform: scaleX(0);
+                transform-origin: left;
+            }
+        }
+
+        &--nz {
+            background: linear-gradient(135deg, #00247d 0%, #001a5c 100%);
+            opacity: 0;
+        }
+    }
+
+    &__stripe {
+        &--1 { background: #000}
+        &--2 { background: #f5d800}
+        &--3 { background: #c8102e}
+    }
+
+    &.phase-3 &__team-bg--belgium &__stripe {
+        animation: splashStripeIn 0.5s ease-out forwards;
+
+        &--1 { animation-delay: 0s; }
+        &--2 { animation-delay: 0.1s; }
+        &--3 { animation-delay: 0.2s; }
+    }
+
+    &.phase-4 &__team-bg--nz {
+        animation: splashFadeIn 0.5s ease-out forwards;
+    }
+
+    &__nz-stars {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        font-size: 3rem;
+        color: rgba(255, 0, 0, 0.3);
+        opacity: 0;
+    }
+
+    &.phase-4 &__nz-stars {
+        animation: splashFadeIn 0.8s 0.3s ease-out forwards;
+    }
+
+    &__team-content {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    &__team-flag {
+        font-size: clamp(5rem, 20vw, 10rem);
+        filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.5));
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    &.phase-3 &__team-scene--belgium &__team-flag,
+    &.phase-4 &__team-scene--nz &__team-flag {
+        animation: splashTeamFlagIn 0.7s 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+
+    &__team-name {
+        font-family: var(--font-display);
+        font-size: clamp(2.5rem, 12vw, 5rem);
+        font-weight: 900;
+        color: #fff;
+        text-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+        margin-top: 0.5rem;
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    &.phase-3 &__team-scene--belgium &__team-name,
+    &.phase-4 &__team-scene--nz &__team-name {
+        animation: splashFadeUp 0.6s 0.5s ease-out forwards;
+    }
+
+    &__team-nickname {
+        font-size: clamp(0.9rem, 3vw, 1.3rem);
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.85);
+        margin-top: 0.3rem;
+        opacity: 0;
+    }
+
+    &.phase-3 &__team-scene--belgium &__team-nickname,
+    &.phase-4 &__team-scene--nz &__team-nickname {
+        animation: splashFadeUp 0.6s 0.7s ease-out forwards;
+    }
+
+    &__team-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem 1.5rem;
+        margin: 1.5rem;
+        max-width: 400px;
+    }
+
+    &__stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(8px);
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    &.phase-3 &__team-scene--belgium &__stat,
+    &.phase-4 &__team-scene--nz &__stat {
+        animation: splashFadeUp 0.5s ease-out forwards;
+
+        &:nth-child(1) {animation-delay: 0.9s;}
+        &:nth-child(2) {animation-delay: 1s;}
+        &:nth-child(3) {animation-delay: 1.1s;}
+        &:nth-child(4) {animation-delay: 1.2s;}
+    }
+
+    &__stat-value {
+        font-family: var(--font-display);
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        font-weight: 900;
+        color: var(--gold);
+        line-height: 1;
+    }
+
+    &__stat-label {
+        font-size: clamp(0.55rem, 2vw, 0.7rem);
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-align: center;
+        margin-top: 0.25rem;
+    }
+
+    &__matchup-scene {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        z-index: 20;
+        background: #0a3d6b;
+        opacity: 0;
+        pointer-events: none;
+        padding: 2rem;
+    }
+
+    &.phase-5 &__matchup-scene { opacity: 1; }
+
+    &.phase-6 &__matchup-scene {
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    &__matchup-team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        opacity: 0;
+
+        &--left { --slide-from: -50px; transform: translateX(var(--slide-from)); }
+        &--right { --slide-from: 50px; transform: translateX(var(--slide-from)); }
+    }
+
+    &.phase-5 &__matchup-team--left,
+    &.phase-5 &__matchup-team--right {
+        animation: splashSlideIn 0.6s 0.2s ease-out forwards;
+    }
+
+    &__matchup-flag {
+        font-size: clamp(4rem, 15vw, 7rem);
+        filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.6));
+    }
+
+    &__matchup-name {
+        font-family: var(--font-display);
+        font-size: clamp(1rem, 4vw, 1.5rem);
+        font-weight: 900;
+        color: #fff;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    &__matchup-vs {
+        font-family: var(--font-display);
+        font-size: clamp(3rem, 12vw, 6rem);
+        font-weight: 900;
+        color: var(--gold);
+        text-shadow: 0 0 60px rgba(255, 215, 0, 0.8);
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    &.phase-5 &__matchup-vs {
+        animation: splashVsIn 0.8s 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    }
+
+    &__matchup-label {
+        position: absolute;
+        bottom: 12%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: clamp(0.7rem, 2.5vw, 1rem);
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        color: var(--gold);
+        text-transform: uppercase;
+        opacity: 0;
+    }
+
+    &.phase-5 &__matchup-label {
+        animation: splashFadeUp 0.5s 0.9s ease-out forwards;
+    }
+
+    &__particles {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 5;
+        overflow: hidden;
+    }
+
+    &__particle {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: var(--gold);
+        border-radius: 50%;
+        opacity: 0;
+    }
+
+    &.phase-5 &__particle {
+        animation: splashParticle 2s ease-out forwards;
+        animation-delay: calc(var(--i) * 0.03s);
+    }
+
+    &__flash {
+        position: absolute;
+        inset: 0;
+        background: #fff;
+        z-index: 50;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &.phase-5 &__flash {
+        animation: splashFlash 0.3s 0.4s ease-out forwards;
+    }
+
+    &.phase-6 {
+        animation: splashExit 0.6s ease-in forwards;
+    }
+}
