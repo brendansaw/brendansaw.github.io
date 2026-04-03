@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { teams } from "../data/teams";
 import './SplashScreen.scss'
+import IntroMp3 from "../../../images/fifa/audio.mp3";
 
 function TeamScene({ team, side }) {
     return (
@@ -39,24 +40,70 @@ function SplashScreen({ onComplete }) {
     const [phase, setPhase] = useState(0);
     const [ballOffset, setBallOffset] = useState(-60);
     const [ballRotation, setBallRotation] = useState(0);
+    const [ballSettled, setBallSettled] = useState(false);
     const animationRef = useRef(null);
+    const audioRef = useRef(null);
 
     useEffect(() => {
-        const timers = [
-            setTimeout(() => setPhase(1), 300),
-            setTimeout(() => setPhase(2), 2800),
-            setTimeout(() => setPhase(3), 6000),
-            setTimeout(() => setPhase(4), 11000),
-            setTimeout(() => setPhase(5), 16000),
-            setTimeout(() => setPhase(6), 19500),
-            setTimeout(() => onComplete(), 20300),
-        ]
-        return () => timers.forEach(clearTimeout)
-    }, [onComplete]);
+        const t = setTimeout(() => setPhase(1), 300);
+        return () => clearTimeout(t);
+    }, []);
+
+    useEffect(() => {
+        const audio = new Audio(IntroMp3);
+        audio.loop = false;
+        audio.volume = 0.2;
+        audioRef.current = audio;
+        return () => {
+            audio.pause();
+            audio.src = '';
+        }
+    }, []);
+
+    const handleTap = () => {
+        if (phase === 1 && ballSettled) {
+            setPhase(2);
+
+            const audio = audioRef.current;
+            setTimeout(() => {
+                audio.pause();
+                audio.src = '';
+            }, 27500)
+
+            setTimeout(() => setPhase(3), 8000);
+            setTimeout(() => setPhase(4), 15000);
+            setTimeout(() => setPhase(5), 20000);
+            setTimeout(() => setPhase(6), 25500);
+            setTimeout(() => onComplete(), 30300);
+        }
+    }
 
     useEffect(() => {
         if (phase !== 1) return;
+        const t = setTimeout(() => setBallSettled(true), 2500);
+        return () => clearTimeout(t);
+    }, [phase]);
+
+    useEffect(() => {
+        if (phase === 2 && audioRef.current) {
+            console.log("hello")
+            const audio = audioRef.current;
+            audio.play().catch(() => {})
+        };
+
+        // if (phase === 6 && audioRef.current) {
+        //     const audio = audioRef.current;
+        //     const fade = setInterval(() => {
+        //         if (audio.volume > 0.05) {
+        //             audio.volume = Math.max(0, audio.volume - 0.05)
+        //         } else {
+        //             audio.pause();
+        //             clearInterval(fade);
+        //         }
+        //     }, 500);
+        // }
         
+        if (phase !== 1) return;
         const startTime = performance.now();
         const duration = 2200;
 
@@ -101,7 +148,7 @@ function SplashScreen({ onComplete }) {
     const {belgium, nz} = teams;
 
     return (
-        <div className={`splash phase-${phase}`}>
+        <div className={`splash phase-${phase}`} onClick={handleTap}>
             <div className="splash__darkness" />
 
             <div className="splash__spotlights">
@@ -125,6 +172,10 @@ function SplashScreen({ onComplete }) {
                     <div className="splash__ball-shadow" />
                     <div className="splash__impact-ring" />
                     <div className="splash__impact-ring splash__impact-ring--2" />
+                    <div className="splash__welcome">Happy<br/>anniversary<br/>Christina!</div>
+                    <div className={`splash__tap-hint${ballSettled ? ' splash__tap-hint--visible' : ''}`}>
+                        TAP TO CONTINUE
+                    </div>
                 </div>
             )}
 

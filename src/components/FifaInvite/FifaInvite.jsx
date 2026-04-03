@@ -15,7 +15,9 @@ function App() {
         setShowSplash(false)
     }, []);
 
-    document.title = "FIFA WC 2026 - NZ vs Belgium"
+    document.title = "FIFA WC 2026 - NZ vs Belgium";
+    const favicon = document.querySelector("link[rel='icon']");
+    favicon.href = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚽️</text></svg>";
     return (<>
         {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
         <section className="hero">

@@ -9,6 +9,7 @@
     --font-display: Georgia, 'Times New Roman', serif;
     --border-radius: 12px;
     --transition: 0.3s ease;
+    background: var(--fifa-dark-blue);
 }
 
 * {
