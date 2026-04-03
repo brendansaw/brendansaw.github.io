@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe722140.css",
-    "main.js": "/static/js/main.e42ab207.js",
+    "main.css": "/static/css/main.2dc70a70.css",
+    "main.js": "/static/js/main.2599f346.js",
     "static/js/453.42d0f176.chunk.js": "/static/js/453.42d0f176.chunk.js",
     "static/media/escapefromcorona.png": "/static/media/escapefromcorona.9ca9a1dfa111442fb29e.png",
+    "static/media/audio.mp3": "/static/media/audio.c459fd48d20cf7f30364.mp3",
     "static/media/greenmaps.png": "/static/media/greenmaps.9c6d16e0e050f3807a6f.png",
     "static/media/github-profile-picture.jpg": "/static/media/github-profile-picture.801b45d178969adcb83d.jpg",
     "static/media/hackchan.png": "/static/media/hackchan.d253574c1485ebc3b0a7.png",
@@ -17,12 +18,12 @@
     "static/media/nz.svg": "/static/media/nz.0fb39b020eeda014e44984a5b409b332.svg",
     "index.html": "/index.html",
     "static/media/belgium.svg": "/static/media/belgium.bd884fd68fd30c1cb1c6550032d37700.svg",
-    "main.fe722140.css.map": "/static/css/main.fe722140.css.map",
-    "main.e42ab207.js.map": "/static/js/main.e42ab207.js.map",
+    "main.2dc70a70.css.map": "/static/css/main.2dc70a70.css.map",
+    "main.2599f346.js.map": "/static/js/main.2599f346.js.map",
     "453.42d0f176.chunk.js.map": "/static/js/453.42d0f176.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe722140.css",
-    "static/js/main.e42ab207.js"
+    "static/css/main.2dc70a70.css",
+    "static/js/main.2599f346.js"
   ]
 }
